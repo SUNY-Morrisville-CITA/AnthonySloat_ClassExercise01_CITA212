@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4472330468485032057, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4709157276729789617, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_LocalScale.x
@@ -203,7 +203,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4472330468485032057, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4709157276729789617, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_LocalScale.x
@@ -281,7 +281,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4472330468485032057, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4709157276729789617, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -650,8 +650,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51899648fb16c004fb7c8f33a214a3ea, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   moveSpeed: 5
+  rotationSpeed: 25
 --- !u!1 &1061303245
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +700,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4472330468485032057, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4709157276729789617, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_LocalScale.x
@@ -1006,7 +1007,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4472330468485032057, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4709157276729789617, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_LocalScale.x
@@ -1176,7 +1177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4472330468485032057, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4709157276729789617, guid: 5ba567f8c5255fd4bba0b0aa4c76c4d8, type: 3}
       propertyPath: m_LocalScale.x
