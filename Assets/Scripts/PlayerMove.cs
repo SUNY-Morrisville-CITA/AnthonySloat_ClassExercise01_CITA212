@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.Layouts;
@@ -6,10 +8,16 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float rotationSpeed = 5f;
+    bool hasPackage = false;
+    SpriteRenderer ShirouEmiyaStandInRender;
+    SpriteRenderer CustomerRender;
+    SpriteRenderer CustomerRender2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Debug.Log(hasPackage);
         Debug.Log("Game has begun.");
+        ShirouEmiyaStandInRender = GetComponent<SpriteRenderer>();
     }
 
     
@@ -37,6 +45,35 @@ public class PlayerMove : MonoBehaviour
         if(collision.collider.CompareTag("Obstacle"))
         {
             Debug.Log("The collision was with an object of the 'Obstacle' tag. Reduce health or destroy object.");
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("The trigger has been successful." + other.gameObject.name);
+        if(other.CompareTag("Package"))
+        {
+            if (hasPackage)
+            {
+                Debug.Log("You already have a package!!");
+                return;
+            }
+            hasPackage = true;
+            Debug.Log("Obtained package!");
+            ShirouEmiyaStandInRender.color = Color.red;
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("Customer"))
+        {
+            if (hasPackage) 
+            {
+                Debug.Log("Package successfully delivered!");
+                hasPackage = false;
+                ShirouEmiyaStandInRender.color = Color.black;
+            }
+            else 
+            {
+                Debug.Log("You don't have a package to deliver!");
+            }
         }
     }
 }
