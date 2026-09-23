@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClassExercise 9.21.unity
     guid: 925bf93bdacf47e40b725217906d74bf
+  - enabled: 0
+    path: Assets/Scenes/Exercise01.unity
+    guid: d34b4abbb1f14874e8424014d1952f8b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
